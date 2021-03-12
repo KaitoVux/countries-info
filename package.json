@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "startPWA": "http-server -p 8080 -c-1 dist/countries-info"
+    "start:pwa": "rimraf dist && npm run build && http-server -p 4200 -c-1 dist/countries-info"
   },
   "private": true,
   "dependencies": {

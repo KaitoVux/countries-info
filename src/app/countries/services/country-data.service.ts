@@ -4,10 +4,9 @@ import { HttpClient } from '@angular/common/http';
 import { throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
-const BASE_COUNTRIES_API_URL = 'https://restcountries.eu/rest/v2/all';
 const BASE_COUNTRIES_REGION_API_URL =
-  'https://restcountries.eu/rest/v2/region/';
-const BASE_COUNTRY_CODE_API_URL = 'https://restcountries.eu/rest/v2/alpha/';
+  'https://restcountries.eu/rest/v3.1/region/';
+const BASE_COUNTRY_CODE_API_URL = 'https://restcountries.eu/rest/v3.1/alpha/';
 
 @Injectable({
   providedIn: 'root'
